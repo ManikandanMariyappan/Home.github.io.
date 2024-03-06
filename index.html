@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Photo Downloading Website</title>
+<title>Colorful Photo Downloading Website</title>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -19,13 +19,20 @@
     }
     h1 {
         color: #333;
+        margin-bottom: 20px;
     }
     .photo {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     .photo img {
         max-width: 100%;
         height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+    }
+    .photo:hover img {
+        transform: scale(1.1);
     }
     .download-link {
         background-color: #4CAF50;
@@ -34,25 +41,26 @@
         text-align: center;
         text-decoration: none;
         border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .download-link:hover {
+        background-color: #45a049;
     }
 </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Photo Downloading Website</h1>
+    <h1>Colorful Photo Downloading Website</h1>
     <div class="photo">
-        <img src="https://i.ibb.co/0ZZW6Zt/landscape.jpg" alt="Photo 1">
-        <a href="https://i.ibb.co/0ZZW6Zt/landscape.jpg" download class="download-link">Download Photo</a>
+        <img src="https://i.ibb.co/YfSNWn5/photo1.jpg" alt="Photo 1">
+        <a href="https://i.ibb.co/YfSNWn5/photo1.jpg" download class="download-link">Download Photo 1</a>
     </div>
-     <div class="photo">
-            <img src="https://i.ibb.co/YfSNWn5/landscape.jpg" alt="Photo 2">
-            <a href="https://i.ibb.co/YfSNWn5/landscape.jpg" download class="https://i.ibb.co/YfSNWn5/landscape.jpg">Download Photo</a>
-      </div>
-
+    <div class="photo">
+        <img src="https://i.ibb.co/0ZZW6Zt/photo2.jpg" alt="Photo 2">
+        <a href="https://i.ibb.co/0ZZW6Zt/photo2.jpg" download class="download-link">Download Photo 2</a>
+    </div>
 </div>
 
 </body>
 </html>
-
-https://ibb.co/YfSNWn5
